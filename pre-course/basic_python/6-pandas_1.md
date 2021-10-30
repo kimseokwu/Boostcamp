@@ -163,18 +163,62 @@ s1.map(s2).head(5)
 
 __apply for dataframe__
 
-- map과 달리 series 전체에 해당 함수를 적용
+- map과 달리 series 전체가 해당 함수에 들어감
 - 입력 값이 series 데이터로 입력받아 handling 가능
-
 - 내장 연산 함수를 사용할 때도 똑같은 효과를 거둘 수 있음
 - mean, std, sum 등
+- series 단위에 apply 적용시킬 때는 map과 같은 효과
 
 
 
 __applymap for dataframe__
 
 - series 단위가 아닌 element 단위로 함수를 적용함
-- series 단위에 apply 적용시킬 때와 같은 효과
 
 
+
+# pandas built-in function
+
+
+
+__describe__
+
+- numeric type 데이터의 요약 정보를 읽어줌
+
+
+
+__unique__
+
+- series data의 유일한 값을 list로 반환
+
+
+
+__sum__
+
+- 기본적인 column 또는 row 값의 연산을 지원
+- sub, mean, min, max, count, median, mad, var 등
+
+
+
+__isnull__
+
+- column 또는 row값의 Nana 값의 인덱스를 반환함
+- df.isnull().sum(): 널값이 몇갠지 보여줌
+
+
+
+__sort_values__
+
+- column 기준으로 데이터를 sorting
+
+
+
+__correlation & covariance__
+
+- 상관계수와 공분산을 구하는 함수
+- corr(모든 column), cov, corrwith(특정 한 column)
+
+
+
+- pd.option.display.max_rows: 디스플레이 행 수 늘리기 
 

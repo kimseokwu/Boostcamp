@@ -20,6 +20,15 @@ __AI 수학__
 - 경사하강법
 - 딥러닝
 - 베이즈 통계학
-
 - CNN
 - RNN
+
+
+
+__딥러닝 기초__
+
+- MLP
+- Optimization
+- CNN
+- RNN
+
